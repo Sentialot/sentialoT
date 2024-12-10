@@ -1,0 +1,196 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación en Ciberseguridad IoT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            background-color: #f2f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #005f73;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .service h2 {
+            font-weight: bold;
+            color: #005f73;
+            margin-top: 20px;
+        }
+        .service ul {
+            text-align: left;
+            padding: 0;
+            list-style-type: none;
+        }
+        .service ul li {
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #008CBA;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .cta {
+            text-align: center;
+            margin: 50px 0;
+            background-color: #008CBA;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .cta h2 {
+            font-weight: bold;
+            margin: 0;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: white;
+            color: #008CBA;
+        }
+        .testimonials, .faq {
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <h1>Capacitación en Ciberseguridad para Dispositivos IoT</h1>
+
+    </header>
+
+    <div class="container">
+        <section class="services">
+            <!-- Talleres Personalizados -->
+            <div class="service">
+                <img src="talleres.jpg" alt="Talleres de Ciberseguridad">
+                <h2>Talleres Personalizados de Ciberseguridad IoT</h2>
+                <ul>
+                    <li>Sesiones interactivas con enfoque práctico.</li>
+                    <li>Diagnóstico inicial de necesidades de ciberseguridad.</li>
+                    <li>Formación para identificar y solucionar vulnerabilidades.</li>
+                    <li>Certificado de participación.</li>
+                </ul>
+                <p class="price">Desde $500 por sesión (3-5 horas)</p>
+                <p class="price">Paquete mensual: $1,200 (3 talleres)</p>
+            </div>
+
+            <!-- Guías Prácticas -->
+            <div class="service">
+                <img src="guia.jpeg" alt="Guías de Ciberseguridad">
+                <h2>Guías Prácticas para la Gestión Segura de IoT</h2>
+                <ul>
+                    <li>Documentos descargables con pasos claros.</li>
+                    <li>Instrucciones sobre configuraciones seguras y manejo de datos sensibles.</li>
+                    <li>Actualizaciones periódicas.</li>
+                </ul>
+                <p class="price">$100 por guía</p>
+                <p class="price">Plan premium: $300 por acceso anual a la biblioteca de guías.</p>
+            </div>
+
+            <!-- Simulaciones de Amenazas -->
+            <div class="service">
+                <img src="amenaza.jpeg" alt="Simulaciones de Amenazas">
+                <h2>Simulaciones de Amenazas en Tiempo Real</h2>
+                <ul>
+                    <li>Escenarios realistas de ataques (hacking, ransomware, malware).</li>
+                    <li>Pruebas de respuesta del equipo ante incidentes.</li>
+                    <li>Reporte detallado con recomendaciones personalizadas.</li>
+                </ul>
+                <p class="price">Simulación única: $800 por sesión (6 horas)</p>
+                <p class="price">Paquete anual: $6,000 (12 simulaciones y análisis trimestral)</p>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section class="testimonials">
+            <h3>Testimonios de Clientes</h3>
+            <p>"La capacitación fue increíblemente útil. Ahora sabemos cómo proteger mejor nuestros dispositivos IoT." - <strong>Empresa XYZ</strong></p>
+            <p>"Los talleres fueron prácticos y nos ayudaron a identificar vulnerabilidades clave en nuestra red." - <strong>Empresa ABC</strong></p>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes (FAQ) -->
+        <section class="faq">
+            <h3>Preguntas Frecuentes (FAQ)</h3>
+            <p><strong>¿Qué es la capacitación en ciberseguridad IoT?</strong><br>Es una formación práctica que ayuda a las empresas a proteger sus dispositivos IoT mediante buenas prácticas y soluciones de seguridad.</p>
+            <p><strong>¿Cuánto tiempo duran los talleres?</strong><br>Los talleres tienen una duración de 3 a 5 horas, dependiendo del contenido y las necesidades del cliente.</p>
+            <p><strong>¿Necesito tener conocimientos previos sobre ciberseguridad?</strong><br>No es necesario. Nuestros talleres están diseñados tanto para principiantes como para expertos en el área.</p>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section class="cta">
+            <h2>¡Contáctanos y Protege Tus Dispositivos IoT!</h2>
+            <p>Si estás listo para comenzar, completa el siguiente formulario y un miembro de nuestro equipo te contactará.</p>
+            <a href="mailto:contacto@tuempresa.com">Contáctanos</a>
+        </section>
+    </div>
+<!-- Pie de página -->
+<footer style="text-align: center; padding: 50px 0; background-color: rgba(0, 0, 0, 0.7);">
+            <p style="color: #1abc9c; font-size: 25px; margin: 0;">&copy; 2024 SENTIAILOT | Todos los derechos reservados</p>
+             <a href="su.html" target="_blank" style="color: #1abc9c; font-size: 25px; text-decoration: none;">Regresar a la página principal</a>
+            </footer>
+
+</body>
+</html>

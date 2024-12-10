@@ -1,0 +1,332 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Monitoreo IoT</title>
+    <style>
+        /* Diseño general */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: url('sg.gif') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundMove 20s linear infinite;
+        }
+
+        @keyframes backgroundMove {
+            from { background-position: 0 0; }
+            to { background-position: -1000px 0; }
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7); /* Capa de transparencia */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 12px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+
+        button {
+            background-color: #1abc9c;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #16a085;
+        }
+
+        .services {
+            margin-bottom: 30px;
+        }
+
+        .service-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .service-item h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #1abc9c;
+        }
+
+        .result {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1abc9c;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Cotización de Monitoreo IoT</h1>
+
+        <!-- Sección de Descripción de Servicios -->
+        <div class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-item">
+                <h3>Prevención Proactiva de Amenazas</h3>
+                <p>Detecta y bloquea posibles ataques en tiempo real utilizando inteligencia 
+                    artificial avanzada para analizar patrones de actividad sospechosa.
+                    Características:
+                    Monitoreo continuo para detectar y bloquear ataques en tiempo real.
+                    Uso de algoritmos de IA para identificar patrones anómalos.
+                    Protección contra ataques DDoS, malware, y accesos no autorizados.
+                    <table>
+    <thead>
+        <tr>
+            <th>Características</th>
+            <th>Ventajas</th>
+            <th>Costo</th>
+            <th>Promoción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="highlight">
+            <td>Plan Básico</td>
+            <td>Reducción de riesgos cibernéticos, Seguridad 24/7, Minimiza el tiempo de inactividad.</td>
+            <td>Desde $50/mes (hasta 10 dispositivos)</td>
+            <td>Ninguna promoción disponible.</td>
+        </tr>
+        <tr>
+            <td>Plan Avanzado</td>
+            <td>Protección contra ataques, Optimización de dispositivos, Análisis detallados.</td>
+            <td>Desde $150/mes (hasta 50 dispositivos, alertas personalizadas)</td>
+            <td>Descuento del 20% en el primer año si contratas anual.</td>
+        </tr>
+        <tr class="highlight">
+            <td>Plan Premium</td>
+            <td>Protección completa, Reportes avanzados, Soporte prioritario.</td>
+            <td>Desde $300/mes (dispositivos ilimitados, soporte prioritario)</td>
+            <td>Descuento del 20% en el primer año si contratas anual.</td>
+        </tr>
+    </tbody>
+</table>
+                
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Gestión Inteligente y Eficiente</h3>
+                <p>Automatiza la supervisión y optimiza el rendimiento de tus dispositivos IoT, asegurando un funcionamiento continuo y seguro.
+                  <!-- Tabla de características, ventajas y precios -->
+    <table>
+        <thead>
+            <tr>
+                <th>Características</th>
+                <th>Ventajas</th>
+                <th>Costo</th>
+                <th>Promociones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Visualización en un panel centralizado para todos tus dispositivos IoT.</li>
+                        <li>Automatización de actualizaciones y configuraciones.</li>
+                        <li>Control remoto y estadísticas de uso.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Ahorro de tiempo en la gestión de múltiples dispositivos.</li>
+                        <li>Optimización del rendimiento con ajustes automáticos.</li>
+                        <li>Mejora en la eficiencia energética.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Básico: $30/mes (10 dispositivos, actualizaciones básicas).</li>
+                        <li>Avanzado: $100/mes (50 dispositivos, optimización avanzada).</li>
+                        <li>Premium: $200/mes (ilimitados dispositivos, herramientas avanzadas).</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Contrata el plan anual y obtén 2 meses gratis.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+                </p>
+            </div>
+
+            <!-- Servicio de Alertas Personalizadas y Reportes -->
+            <div class="service-item">
+                <h3>Alertas Personalizadas y Reportes Detallados</h3>
+                <p>Recibe notificaciones instantáneas y reportes detallados sobre el estado de tus dispositivos y cualquier actividad sospechosa.</p>
+                
+                <!-- Tabla de características, ventajas, costos y promociones -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th>Ventajas</th>
+                            <th>Costo</th>
+                            <th>Promoción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Notificaciones en tiempo real (SMS, correo, app).</td>
+                            <td>Mayor control sobre tus dispositivos IoT.</td>
+                            <td>Básico: Desde $20/mes</td>
+                            <td>10% de descuento al referir a un amigo.</td>
+                        </tr>
+                        <tr>
+                            <td>Reportes diarios, semanales o mensuales personalizables.</td>
+                            <td>Toma de decisiones basada en datos claros y relevantes.</td>
+                            <td>Avanzado: Desde $70/mes</td>
+                            <td>10% de descuento al referir a un amigo.</td>
+                        </tr>
+                        <tr>
+                            <td>Análisis predictivo para anticipar problemas.</td>
+                            <td>Anticipación de fallas antes de que ocurran.</td>
+                            <td>Premium: Desde $150/mes</td>
+                            <td>10% de descuento al referir a un amigo.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Formulario de Cotización -->
+        <form method="POST">
+            <div class="form-group">
+                <label for="service">Selecciona un servicio:</label>
+                <select name="service" id="service" required>
+                    <option value="prevencion">Prevención Proactiva de Amenazas</option>
+                    <option value="gestion">Gestión Inteligente y Eficiente</option>
+                    <option value="alertas">Alertas Personalizadas y Reportes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plan">Selecciona un plan:</label>
+                <select name="plan" id="plan" required>
+                    <option value="basico">Básico</option>
+                    <option value="avanzado">Avanzado</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="devices">Número de dispositivos:</label>
+                <input type="number" name="devices" id="devices" min="1" required>
+            </div>
+            <button type="submit">Calcular Cotización</button>
+        </form>
+
+        <!-- Botón para aceptar cotización -->
+        <button type="button" onclick="alert('Cotización aceptada. Gracias por elegirnos!')">Aceptar Cotización</button>
+
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $service = $_POST['service'];
+            $plan = $_POST['plan'];
+            $devices = (int) $_POST['devices'];
+
+            $pricing = [
+                'prevencion' => ['basico' => 50, 'avanzado' => 150, 'premium' => 300],
+                'gestion' => ['basico' => 30, 'avanzado' => 100, 'premium' => 200],
+                'alertas' => ['basico' => 20, 'avanzado' => 70, 'premium' => 150],
+            ];
+
+            $basePrice = $pricing[$service][$plan];
+            $discount = 0;
+            if ($plan === 'premium' && $devices > 50) {
+                $discount = 0.15;
+            }
+
+            $totalPrice = $basePrice + ($devices - 10) * 5;
+            $totalPrice -= $totalPrice * $discount;
+
+            echo "<div class='result'>";
+            echo "<h2>Tu Cotización:</h2>";
+            echo "<p><strong>Servicio:</strong> " . ucfirst($service) . "</p>";
+            echo "<p><strong>Plan:</strong> " . ucfirst($plan) . "</p>";
+            echo "<p><strong>Número de dispositivos:</strong> $devices</p>";
+            echo "<p><strong>Total estimado:</strong> $" . number_format($totalPrice, 2) . "</p>";
+            if ($discount > 0) {
+                echo "<p><strong>Descuento aplicado:</strong> " . ($discount * 100) . "%</p>";
+            }
+            echo "</div>";
+        }
+        ?>
+    </div>
+        <!-- Pie de página -->
+         <footer style="text-align: center; padding: 50px 0; background-color: rgba(0, 0, 0, 0.7);">
+            <p style="color: #1abc9c; font-size: 25px; margin: 0;">&copy; 2024 SENTIAILOT | Todos los derechos reservados</p>
+             <a href="su.html" target="_blank" style="color: #1abc9c; font-size: 25px; text-decoration: none;">Regresar a la página principal</a>
+            </footer>
+
+</body>
+
+</html>
