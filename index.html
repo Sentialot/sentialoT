@@ -1,0 +1,297 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definir la codificación de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Asegurar que la página sea responsiva y se ajuste a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>SENTIAILOT</title>
+
+    <style>
+        /* Estilo general del cuerpo de la página */
+        body {
+            font-family: Arial, Helvetica, sans-serif, 'Times New Roman';
+            background-color: #f4f4f4;
+            color: #000;
+            margin: 0;
+        }
+
+        /* Estilo del encabezado: barra superior */
+        header {
+            background-color: #003366; /* Azul marino */
+            padding: 50px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 30px;
+        }
+
+        /* Título dentro del encabezado */
+        header h1 {
+            margin: 0;
+            color: white;
+            text-align: justify;
+        }
+
+        /* Estilo del logo dentro del encabezado */
+        header .logo {
+            max-width: 175px;
+            height: 10;
+        }
+
+        /* Estilo de la lista de navegación */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Estilo de los elementos de la lista de navegación */
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        /* Estilo de los enlaces de navegación */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px; /* Tamaño de letra más grande */
+        }
+
+        /* Efecto al pasar el ratón sobre los enlaces de navegación */
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo de la imagen con texto centrado */
+        img.centrar-imagen {
+            display: table-caption;
+            margin: 100px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Contenedor que organiza las secciones en fila o columna */
+        .contenedor-secciones {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /* Estilo de cada sección dentro del contenedor */
+        section {
+            padding: 40px; /* Aumenté el padding */
+            margin: 20px; /* Aumenté el margen */
+            background-color: #66ccff; /* Azul claro */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 280px; /* Aumenté el ancho mínimo */
+            text-align: center;
+            color: #000;
+            font-size: 100px; /* Aumenté el tamaño de la fuente */
+        }
+
+        /* Título dentro de las secciones */
+        section h2 {
+            color: #003366; /* Azul marino */
+            font-size: 30px; /* Aumenté el tamaño de la fuente */
+        }
+
+        /* Estilo del texto dentro de las secciones */
+        section p {
+            font-size: 30px; /* Aumenté el tamaño de la fuente */
+            line-height: 1.6; /* Aumenté la altura de la línea */
+            text-align: justify;
+        }
+
+        /* Estilo de los botones en las secciones */
+        button {
+            padding: 60px 80px; /* Aumenté el tamaño del botón */
+            margin-top: 15px;
+            background-color: #003366; /* Azul marino */
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        /* Efecto al pasar el ratón sobre los botones */
+        button:hover {
+            background-color: #0055cc; /* Azul claro */
+        }
+
+        /* Estilo de la sección de contacto */
+        .contacto {
+            background-color: #003366; /* Azul marino */
+            color: white;
+            padding: 30px; /* Aumenté el padding */
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Estilo de las etiquetas dentro del formulario de contacto */
+        .contacto label {
+            display: block;
+            margin-bottom: 10px; /* Aumenté el margen */
+            font-size: 18px; /* Aumenté el tamaño de la fuente */
+            font-weight: bold;
+        }
+
+        /* Estilo de los campos de entrada y textarea en el formulario */
+        .contacto input,
+        .contacto textarea {
+            width: 80%;
+            padding: 12px; /* Aumenté el padding */
+            margin-bottom: 15px; /* Aumenté el margen */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px; /* Aumenté el tamaño de la fuente */
+        }
+
+        /* Estilo del botón dentro del formulario de contacto */
+        .contacto button {
+            background-color: #66ccff; /* Azul claro */
+            color: #003366; /* Azul marino */
+            padding: 12px 18px; /* Aumenté el tamaño del botón */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Efecto al pasar el ratón sobre el botón en el formulario de contacto */
+        .contacto button:hover {
+            background-color: #0055cc; /* Azul más intenso */
+            color: white;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #003366; /* Azul marino */
+            color: white;
+            text-align: center;
+            padding: 15px; /* Aumenté el padding */
+            margin-top: 30px;
+        }
+
+        /* Estilo del texto dentro del pie de página */
+        footer p {
+            margin: 0;
+        }
+
+        /* Sección con imagen de fondo y texto centrado */
+        .imagen-con-texto {
+            position: relative;
+            width: 100%;
+            height: 700px; /* Ajusta la altura según lo necesites */
+            background-image: url('logo.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilo del texto que aparece sobre la imagen */
+        .texto-en-imagen {
+            color: white;
+            font-size: 50px; /* Ajusté el tamaño de la fuente */
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar visibilidad */
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con título, logo y navegación -->
+    <header>
+        <h1>SENTIAILOT</h1>
+        <img src="LOGONEGOCIO.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#seccion1">Auditorías IoT</a></li>
+                <li><a href="#seccion2">Capacitación</a></li>
+                <li><a href="#seccion3">Monitoreo IA</a></li>
+                <li><a href="#seccion4">Dispositivos IoT</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de imagen con texto centrado -->
+    <div class="imagen-con-texto">
+        <div class="texto-en-imagen">
+            "La seguridad no es un producto, sino un proceso." – Bruce Schneier
+            <img src="LOGONEGOCIO.png" alt="SENTIAILOT" style="width: 100%; max-width: 300px; margin: 20px auto; display: block; border-radius: 20px;">
+
+        </div>
+    </div>
+
+    <!-- Contenedor de secciones con contenido específico -->
+    <div class="contenedor-secciones">
+        <section id="seccion1">
+            <h2>Auditorías de seguridad IoT personalizadas</h2>
+            <img src="auditorias.jpg" alt="Auditorías de seguridad" style="width: 100%; max-width: 200px; margin: 10px auto; display: block; border-radius: 10px;">
+            <p>Analizamos dispositivos y sistemas para identificar y resolver vulnerabilidades específicas.</p>
+            <button onclick="window.location.href='auditoria.html'"> Informacion</button>
+        </section>
+        
+        <section id="seccion2">
+            <h2>Capacitación para clientes</h2>
+            <img src="capacitacion.jpeg" alt="Capacitación" style="width: 100%; max-width: 200px; margin: 10px auto; display: block; border-radius: 10px;">
+            <p>Enseñamos prácticas de ciberseguridad para que las empresas entiendan y protejan sus dispositivos IoT.</p>
+            <button onclick="window.location.href='capacitacion.html'"> Informacion</button>
+
+        </section>
+
+        <section id="seccion3">
+            <h2>Monitoreo de dispositivos IoT con IA</h2>
+            <img src="monitoreo.jpg" alt="Monitoreo IA" style="width: 100%; max-width: 200px; margin: 10px auto; display: block; border-radius: 10px;">
+            <p>Monitoreo constante para prevenir ataques y gestionar dispositivos IoT de manera eficiente.</p>
+            <button onclick="window.location.href='monitoreo.html'"> Ingresar</button>
+        </section>
+
+        <section id="seccion4">
+            <h2>Dispositivos IoT seguros y optimizados</h2>
+            <img src="iot.jpg" alt="Dispositivos IoT" style="width: 100%; max-width: 200px; margin: 10px auto; display: block; border-radius: 10px;">
+            <p>Optimizamos y garantizamos que los dispositivos IoT sean seguros y funcionales para tus necesidades.</p>
+            <button onclick="window.location.href='dispositivos.html'"> Ingresar</button>
+        </section>
+    </div>
+    <div>
+
+    </div>
+
+    <!-- Sección de contacto -->
+    <div id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 SENTIAILOT | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

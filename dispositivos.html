@@ -1,0 +1,320 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos IoT Preconfigurados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #e3f2fd;
+            color: #333;
+        }
+        h1 {
+            color: #0288d1;
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            color: #0277bd;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);            
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #b3e5fc;
+            text-align: left;
+        }
+        th {
+            background-color: #81d4fa;
+            color: #01579b;
+        }
+        td {
+            background-color: #e1f5fe;
+        }
+        .btn {
+            background-color: #03a9f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0288d1;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        .total {
+            font-weight: bold;
+            color: #0288d1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dispositivos IoT Preconfigurados</h1>
+    <p>A continuación, encontrarás una lista de dispositivos IoT preconfigurados para empresas y hogares, listos para agregar a tu carrito.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del Dispositivo IoT</th>
+                <th>Descripción</th>
+                <th>Características</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Seleccionar / Agregar al Carrito</th>
+            </tr>
+        </thead>
+        <tbody id="products-list">
+            <tr>
+                <td>Cámara de Seguridad IoT Pro</td>
+                <td>Cámara para monitoreo remoto en hogares y oficinas.</td>
+                <td>1080p HD, visión nocturna, detección de movimiento, grabación en la nube, control remoto</td>
+                <td>$129.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-1"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(1, 129.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Termostato Inteligente</td>
+                <td>Termostato que optimiza el consumo de energía en empresas y hogares.</td>
+                <td>Control vía app, programación horaria, compatible con Alexa y Google Home</td>
+                <td>$159.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-2"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(2, 159.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Enchufe Inteligente</td>
+                <td>Enchufe para controlar dispositivos de forma remota.</td>
+                <td>Programación de horarios, control con app o asistentes de voz, medición de consumo energético</td>
+                <td>$39.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-3"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(3, 39.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Bombillo Inteligente LED</td>
+                <td>Bombillo LED controlado a través de una app para mayor eficiencia energética.</td>
+                <td>Control de intensidad y color, programación, compatible con Alexa y Google Home</td>
+                <td>$24.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-4"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(4, 24.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Sensor de Movimiento IoT</td>
+                <td>Sensor inteligente para activar dispositivos automáticamente cuando se detecta movimiento.</td>
+                <td>Alarma, notificación en la app, compatible con otros dispositivos IoT</td>
+                <td>$49.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-5"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(5, 49.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Puerta Inteligente IoT</td>
+                <td>Puerta automática para mayor seguridad en oficinas y hogares.</td>
+                <td>Apertura controlada por app, integración con cámaras, notificaciones de acceso</td>
+                <td>$499.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-6"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(6, 499.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Sensor de Calidad del Aire</td>
+                <td>Sensor que mide la calidad del aire y ajusta dispositivos de purificación automáticamente.</td>
+                <td>Monitoreo en tiempo real, integración con sistemas de purificación, alertas en la app</td>
+                <td>$89.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-7"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(7, 89.99)">Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Refrigerador Inteligente</td>
+                <td>Refrigerador IoT que controla temperatura, envía alertas y optimiza el consumo de energía.</td>
+                <td>Control remoto, compatibilidad con Alexa, optimización energética, alertas de puertas abiertas</td>
+                <td>$899.99</td>
+                <td><input type="number" min="1" value="1" id="cantidad-8"></td>
+                <td><button class="btn" onclick="agregarAlCarrito(8, 899.99)">Seleccionar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>Resumen de la compra</h3>
+    <p id="total">Total: $0</p>
+
+    <h3>Opciones de pago</h3>
+    <label>
+        <input type="radio" name="pago" value="paypal" onclick="mostrarFormularioPago('paypal')"> PayPal
+    </label>
+    <label>
+        <input type="radio" name="pago" value="tarjeta" onclick="mostrarFormularioPago('tarjeta')"> Tarjeta de Crédito/Débito
+    </label>
+
+    <div id="formulario-paypal" class="hidden">
+        <h3>Pago con PayPal</h3>
+        <div class="form-group">
+            <label for="idPaypal">ID de PayPal:</label>
+            <input type="text" id="idPaypal" required>
+        </div>
+        <p id="total-paypal">Total: $0</p>
+        <button class="btn" onclick="realizarPago('paypal')">Pagar con PayPal</button>
+    </div>
+
+    <div id="formulario-tarjeta" class="hidden">
+        <h3>Pago con Tarjeta</h3>
+        <div class="form-group">
+            <label for="numeroTarjeta">Número de tarjeta:</label>
+            <input type="text" id="numeroTarjeta" required>
+        </div>
+        <div class="form-group">
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" required>
+        </div>
+        <div class="form-group">
+            <label for="fechaVencimiento">Fecha de vencimiento:</label>
+            <input type="text" id="fechaVencimiento" placeholder="MM/AA" required>
+        </div>
+        <div class="form-group">
+            <label for="codigoSeguridad">Código de seguridad (CVC):</label>
+            <input type="text" id="codigoSeguridad" required>
+        </div>
+        <p id="total-tarjeta">Total: $0</p>
+        <button class="btn" onclick="realizarPago('tarjeta')">Pagar con Tarjeta</button>
+    </div>
+
+    <h3>Tipo de entrega</h3>
+    <label>
+        <input type="radio" name="entrega" value="domicilio" onclick="mostrarFormularioEntrega('domicilio')"> Domicilio
+    </label>
+    <label>
+        <input type="radio" name="entrega" value="recoger" onclick="mostrarFormularioEntrega('recoger')"> Recoger en local
+    </label>
+
+    <div id="formulario-domicilio" class="hidden">
+        <h3>Formulario de Entrega a Domicilio</h3>
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" required>
+        </div>
+        <div class="form-group">
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" required>
+        </div>
+        <button class="btn" onclick="enviarFormularioDomicilio()">Enviar</button>
+    </div>
+
+    <div id="formulario-recoger" class="hidden">
+        <h3>Formulario de Recogida en Local</h3>
+        <p>Contactanos para más detalles:</p>
+        <p><strong>Teléfono:</strong> 0984852647</p>
+        <p><strong>Redes Sociales:</strong></p>
+        <p><a href="https://www.facebook.com/miempresa" target="_blank">Facebook</a></p>
+        <p><a href="https://www.instagram.com/miempresa" target="_blank">Instagram</a></p>
+        <button class="btn" onclick="enviarFormularioRecoger()">Enviar</button>
+    </div>
+
+    <script>
+        let total = 0;
+
+        // Función para agregar productos al carrito
+        function agregarAlCarrito(productId, price) {
+            const cantidad = document.getElementById(`cantidad-${productId}`).value;
+            total += price * cantidad;
+            document.getElementById("total").textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        // Función para mostrar/ocultar el formulario de pago
+        function mostrarFormularioPago(tipoPago) {
+            const formularioPaypal = document.getElementById("formulario-paypal");
+            const formularioTarjeta = document.getElementById("formulario-tarjeta");
+
+            if (tipoPago === 'paypal') {
+                formularioPaypal.classList.remove("hidden");
+                formularioTarjeta.classList.add("hidden");
+            } else if (tipoPago === 'tarjeta') {
+                formularioTarjeta.classList.remove("hidden");
+                formularioPaypal.classList.add("hidden");
+            }
+        }
+
+        // Función para realizar el pago
+        function realizarPago(tipoPago) {
+            if (tipoPago === 'paypal') {
+                const idPaypal = document.getElementById("idPaypal").value;
+                if (idPaypal) {
+                    alert(`Pago exitoso con PayPal. ID: ${idPaypal}. Total: $${total.toFixed(2)}`);
+                } else {
+                    alert('Por favor, ingrese su ID de PayPal.');
+                }
+            } else if (tipoPago === 'tarjeta') {
+                const numeroTarjeta = document.getElementById("numeroTarjeta").value;
+                const cedula = document.getElementById("cedula").value;
+                const fechaVencimiento = document.getElementById("fechaVencimiento").value;
+                const codigoSeguridad = document.getElementById("codigoSeguridad").value;
+
+                if (numeroTarjeta && cedula && fechaVencimiento && codigoSeguridad) {
+                    alert(`Pago exitoso con tarjeta. Número de tarjeta: ${numeroTarjeta}. Total: $${total.toFixed(2)}`);
+                } else {
+                    alert('Por favor, complete todos los campos de la tarjeta.');
+                }
+            }
+        }
+        // Función para mostrar el formulario de entrega
+        function mostrarFormularioEntrega(tipoEntrega) {
+            const formularioDomicilio = document.getElementById("formulario-domicilio");
+            const formularioRecoger = document.getElementById("formulario-recoger");
+
+            if (tipoEntrega === 'domicilio') {
+                formularioDomicilio.classList.remove("hidden");
+                formularioRecoger.classList.add("hidden");
+            } else if (tipoEntrega === 'recoger') {
+                formularioRecoger.classList.remove("hidden");
+                formularioDomicilio.classList.add("hidden");
+            }
+        }
+
+        // Función para enviar el formulario de domicilio
+        function enviarFormularioDomicilio() {
+            const direccion = document.getElementById("direccion").value;
+            const correo = document.getElementById("correo").value;
+            const celular = document.getElementById("celular").value;
+
+            if (direccion && correo && celular) {
+                alert(`Formulario de domicilio enviado. Dirección: ${direccion}, Correo: ${correo}, Celular: ${celular}`);
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+
+        // Función para enviar el formulario de recoger en local
+        function enviarFormularioRecoger() {
+            alert('Formulario de recogida en local enviado. ¡Gracias por tu compra!');
+        }
+    </script>
+
+    
+    <!-- Pie de página -->
+    <footer style="text-align: center; padding: 50px 0; background-color: rgba(0, 0, 0, 0.7);">
+        <p style="color: #f8f8fb; font-size: 25px; margin: 0;">&copy; 2024 SENTIAILOT | Todos los derechos reservados</p>
+         <a href="index.html" target="_blank" style="color: #0b87c0; font-size: 25px; text-decoration: none;">Regresar a la página principal</a>
+        </footer>
+</body>
+</html>
